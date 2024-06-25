@@ -1,13 +1,63 @@
 /* - root -*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@media all and (max-width: 320px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-app-container{
+        width: 100%;
+        height: 80%;
+    }
+
+    
+}
+
 body{
     display: flex;
     flex-direction: column;
-    margin: 0 40px;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+   
 }
 
 /* -- header --*/
 
+
+
 /* --- main --- */
-.section-hero{
-    
+.hero-section{
+    background-image: url(/img/background-image.png);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-section img{
+    width: 40%;
+}
+
+.info-app-container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #ffffff;
+}
+
+.info-app-container h2{
+    color: #7572FF;
+}
+
+.info-app-container h5{
+    font-weight: 650 ;
+}
+
+.info-app-container h8{
+    color: #6C6C72;
 }
