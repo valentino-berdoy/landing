@@ -1,21 +1,6 @@
 /* - root -*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-@media all and (max-width: 320px) {
-    .hero-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-app-container{
-        width: 100%;
-        height: 80%;
-    }
-
-    
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -27,37 +12,100 @@ body{
 }
 
 /* -- header --*/
+@media screen and (max-width: 320px){
 
+    body{
+        margin: 0;
+    }
 
+    header{
+        background-color: blueviolet;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    nav{
+        background-color: #fff;
+        height: 80%;
+        width: 90%;
+        display: flex;
+        border-radius: 5px;
+        justify-content: space-between ;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 3%;
+        align-items: center ;
+    }
+
+    a{
+        text-decoration: none;
+
+    }
+
+    ul, ol{
+        list-style: none;
+    }
+
+    .menu-hamburguesa{
+        display: none;
+    }
+
+    .menu-hamburguesa:checked + .nav-ul{
+        height: 150px;
+        width: 30%;
+
+    }
+
+    .nav-checkbox{
+
+    }
+
+    .label-hamburguer-nav{
+
+    }
+
+    .list-icon-nav{
+        cursor: pointer;
+        width: 10%;
+    }
+
+    .nav-ul{
+        background-color: white;        
+        border-radius: 5px;
+        width: 30%;        
+        height: 0;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        height: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+        margin: 0;
+        padding: 0;
+        
+        transition: all .3s;
+        overflow: hidden;
+    }
+
+    .li-links{
+
+    }
+
+    .link{
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .list-icon-nav{
+        display: none;
+    }
+        .menu-hamburguesa{
+            display: none;
+        }
+}
 /* --- main --- */
-.hero-section{
-    background-image: url(/img/background-image.png);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.hero-section img{
-    width: 40%;
-}
-
-.info-app-container{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    background-color: #ffffff;
-}
-
-.info-app-container h2{
-    color: #7572FF;
-}
-
-.info-app-container h5{
-    font-weight: 650 ;
-}
-
-.info-app-container h8{
-    color: #6C6C72;
-}
