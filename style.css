@@ -12,7 +12,85 @@ body{
 }
 
 /* -- header --*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 768px) and (min-width:0px){
+
+    body{
+        margin: 0;
+    }
+
+    header{
+        background-color: blueviolet;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav{
+        background-color: #fff;
+        height: 80%;
+        width: 90%;
+        display: flex;
+        border-radius: 5px;
+        justify-content: space-between ;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0, 0;
+        align-items: center ;
+    }
+
+    a{
+        text-decoration: none;
+
+    }
+
+    ul, ol{
+        list-style: none;
+    }
+
+    .contac-header-container{
+        display: none;
+        overflow: hidden;
+    }
+
+    .menu-hamburguesa{
+        display: none;
+    }
+
+    .menu-hamburguesa:checked + .nav-ul{
+        height: 150px;
+        width: 30%;
+
+    }
+
+    .list-icon-nav{
+        cursor: pointer;
+    }
+
+    .nav-ul{
+        background-color: white;        
+        border-radius: 5px;
+        width: 30%;        
+        height: 0;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        height: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+        margin: 0;
+        padding: 0;
+
+        transition: all .3s;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+    
 
     body{
         margin: 0;
@@ -48,64 +126,12 @@ body{
         list-style: none;
     }
 
+    .list-icon-nav{
+        display: none;
+    }
+
     .menu-hamburguesa{
         display: none;
     }
-
-    .menu-hamburguesa:checked + .nav-ul{
-        height: 150px;
-        width: 30%;
-
-    }
-
-    .nav-checkbox{
-
-    }
-
-    .label-hamburguer-nav{
-
-    }
-
-    .list-icon-nav{
-        cursor: pointer;
-        width: 10%;
-    }
-
-    .nav-ul{
-        background-color: white;        
-        border-radius: 5px;
-        width: 30%;        
-        height: 0;
-        position: absolute;
-        top: 90%;
-        left: 0;
-        height: 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10%;
-        margin: 0;
-        padding: 0;
-        
-        transition: all .3s;
-        overflow: hidden;
-    }
-
-    .li-links{
-
-    }
-
-    .link{
-
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .list-icon-nav{
-        display: none;
-    }
-        .menu-hamburguesa{
-            display: none;
-        }
 }
 /* --- main --- */
