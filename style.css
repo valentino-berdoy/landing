@@ -10,8 +10,17 @@ body{
     box-sizing: border-box;
    
 }
+/*-- header --*/
 
-/* -- header --*/
+.download-button-nav{
+    background-color: #5956E9;
+    border: none;
+    border-radius: 5px;
+    color:#ffffff;
+}
+
+
+/*--- general ---*/
 @media screen and (max-width: 768px) and (min-width:0px){
 
     body{
@@ -98,10 +107,10 @@ body{
 
     header{
         background-color: blueviolet;
-        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     nav{
@@ -115,6 +124,7 @@ body{
         position: relative;
         padding: 0 3%;
         align-items: center ;
+        margin-bottom: 5%;
     }
 
     a{
@@ -124,6 +134,20 @@ body{
 
     ul, ol{
         list-style: none;
+    }
+
+    .contac-header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #FFFFFF;
+        padding: 1%;
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 50%;
     }
 
     .list-icon-nav{
