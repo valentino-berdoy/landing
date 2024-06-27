@@ -288,12 +288,20 @@ nav{
         padding: 1% 3%;
     }
 
-    .adv-about-container h3{
-        font-weight: 600;
+    .title-adv-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 45%;
     }
 
-    .adv-about-container p{
-        color: #6C6C72;
-        font-weight: 400;
+    .title-adv-container img{
+        width: 20%;
     }
+
+    .desc.adv.container{
+        width: 100%;
+        height: 45%;
+    }
+
 }
