@@ -197,7 +197,20 @@ nav{
 /* --- main --- */
 
 .hero-section{
-    padding-top: 40% ;
+    padding: 40% 0;
+
+}
+
+.frame-info-container{
+    width: 80%;
+    background-color: none;
+    border: 10px solid #ffffff30;
+    padding: 7% 0;
+}
+
+.info-app-container{
+    position: relative;
+    right: 30px;
 }
 
 .info-app-container h2{
@@ -215,7 +228,7 @@ nav{
 }
 
 .image-download-hero{
-    width: 47%;
+    width: 40%;
 }
 
 @media screen and (max-width: 425px) and (min-width:0px){
@@ -226,18 +239,16 @@ nav{
         flex-direction: column;
         align-items: center;
         gap: 40px;
+
     }
 
     .info-app-container{
-        width: 80%;
         background-color: #FFFFFF;
         padding: 3%;
     }
 
     .cellphone-hero{
-        width: 80%;
-        display: flex;
-        align-items: center;
+        width: 85%;
     }
 
 }
