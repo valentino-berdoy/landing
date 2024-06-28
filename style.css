@@ -250,6 +250,7 @@ nav{
     color: #6C6C72;
     font-weight: 400;
 }
+    /*--- features section---*/
 
 .features-section{
     background-color: #5956E9;
@@ -280,6 +281,19 @@ nav{
     font-weight: 350;
 }
 
+/*--- team section ---*/
+
+.dev-container{
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #6C6C7230;
+}
+
+.dev-container img{
+    border: 10px #5956E9;
+    border-style: dashed;
+    border-radius: 100%;
+    padding: 10px;
+}
 
 
 @media screen and (max-width: 425px) and (min-width:0px){
@@ -370,5 +384,8 @@ nav{
         width: 100%;
         overflow: hidden;
     }
+    
+    /*--- team section ---*/
+
 
 }
