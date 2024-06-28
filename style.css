@@ -270,6 +270,16 @@ nav{
     text-align: center;
 }
 
+.feat-container h3{
+    width: 70%;
+    font-weight: 500;
+}
+
+.feat-container p{
+    width: 80%;
+    font-weight: 350;
+}
+
 
 
 @media screen and (max-width: 425px) and (min-width:0px){
