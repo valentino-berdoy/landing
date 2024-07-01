@@ -342,9 +342,11 @@ nav{
 }
 
 .dev-container img{
-    border: 5px #5956E9;
-    border-radius: 100%;
-    border-style: dashed;
+
+}
+
+.dev-img-container{
+    border: 5px #5956E9 solid;
 }
 
 
@@ -439,5 +441,24 @@ nav{
     
     /*--- team section ---*/
 
+
+}
+
+.logo-footer-container ul{
+    display: flex;
+    flex-direction: row;
+}
+                                            /*--- footer ---*/
+@media screen and (max-width: 425px) and (min-width:0px){
+    footer{
+        background-color: #232233;
+        color: #FFFFFF;
+        padding: 10% 5%;
+    }
+
+    footer ul{
+        list-style: none;
+        padding: 0;
+    }
 
 }
