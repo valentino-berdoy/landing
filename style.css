@@ -282,18 +282,80 @@ nav{
 }
 
 /*--- team section ---*/
-
+.order-team-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/* TO-DO parte de este estilo moverlo al @media de celular*/
 .dev-container{
+    width: 80%;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 #6C6C7230;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.dev-container h3{
+    margin: 20% 0 0 0;
+}
+
+.dev-container h5{
+    color: #6C6C72;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+.dev-container p {
+    color: #6C6C72;
+    font-weight: 350;
+    text-align: center;
+}
+
+.dev-container ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0%;
+    gap: 10px;
+}
+
+.dev-container li{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.dev-container hr{
+    height: 80%;
+    width: 1px;
+    border: none;
+    background-color: #232233;
+    margin: 0;
 }
 
 .dev-container img{
-    border: 10px #5956E9;
-    border-style: dashed;
+    border: 5px #5956E9;
     border-radius: 100%;
-    padding: 10px;
+    border-style: dashed;
 }
+
+    .dev-container{
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 0 #6C6C7230;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+    }
 
 
 @media screen and (max-width: 425px) and (min-width:0px){
