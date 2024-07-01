@@ -60,7 +60,6 @@ nav{
     }
 
     header{
-        background-color: #5956E9;
         height: 4rem;
         display: flex;
         justify-content: center;
@@ -124,6 +123,7 @@ nav{
         gap: 10%;
         margin: 0;
         padding: 0;
+        z-index: 1;
 
         transition: all .3s;
         overflow: hidden;
@@ -199,7 +199,7 @@ nav{
                                         /* --- main --- */
 
 .hero-section{
-    padding: 40% 0;
+    padding: 5% 0;
 
 }
 
