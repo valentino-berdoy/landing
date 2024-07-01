@@ -447,6 +447,24 @@ nav{
 
                                             /*--- footer ---*/
 
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    background-color: red;
+}
+
+.contact-section h2{
+    width: 100%;
+}
+
+.contact-section hr{
+    background-color: #232233;
+    border: none;
+    width: 40%;
+    height: 5px;
+}
 
 footer{
     display: flex;
