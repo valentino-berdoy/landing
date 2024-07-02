@@ -240,8 +240,60 @@ ul, ol{
     align-items: center;
     margin-bottom: 10%;
 }
+/*--- about section---*/
 
-    /*--- features section---*/
+
+.adv-about-container{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #6C6C7230;
+    margin: 5% 0;
+    padding: 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-adv-container{
+    width: 20%;
+    height: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-adv-container img{
+    background-color: #5956E9;
+    border-radius: 100%;
+    padding: 10%;
+    width: 20%;
+    height: 20%;
+}
+
+.title-adv-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 1% 0;
+    gap: 10px;
+}
+
+.title-adv-container h3{
+    margin: 0;
+    font-weight: 500;
+}
+
+.title-adv-container p{
+    margin: 0;
+    color: #6C6C72;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+/*--- features section---*/
 
 .features-section{
     background-color: #5956E9;
@@ -393,55 +445,6 @@ ul, ol{
         width: 70%;
     }
 
-    .adv-about-container{
-        width: 80%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px 0 #6C6C7230;
-        margin: 5% 0;
-        padding: 5% 5%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .img-adv-container{
-        width: 20%;
-        height: 10%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .img-adv-container img{
-        background-color: #5956E9;
-        border-radius: 100%;
-        padding: 10%;
-        width: 20%;
-        height: 20%;
-    }
-
-    .title-adv-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 80%;
-        height: 100%;
-        margin: 1% 0;
-        gap: 10px;
-    }
-
-    .title-adv-container h3{
-        margin: 0;
-        font-weight: 500;
-    }
-
-    .title-adv-container p{
-        margin: 0;
-        color: #6C6C72;
-        font-weight: 400;
-        line-height: 25px;
-    }
-
     /*--- features section---*/
 
     .order-feat-container{
@@ -464,6 +467,59 @@ ul, ol{
                                             /*--- footer ---*/
 
 
+
+
+.contact-section{
+        padding-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        position: relative;
+        top: 150px;
+        z-index: 1;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px #23223355;
+    
+    }
+    
+    .contact-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .icon-container{
+        display: flex;
+        align-self: center;
+        padding: 20px;
+        background-color: #5956E9;
+        border-radius: 100%;
+    }
+    
+    .contact-icon{
+        color: #FFFFFF;    
+    }
+    
+    .contact-section h2{
+        width: 100%;
+        font-weight: 500;
+    }
+    
+    .contact-section hr{
+        background-color: #232233;
+        border: none;
+        width: 100%;
+        height: 4px;
+        margin: 0 20%;
+    }
+                                            
 footer{
     background-color: #232233;
     color: #FFFFFF;
@@ -560,56 +616,7 @@ footer p{
 }
 
 @media screen and (max-width: 425px) and (min-width:0px){
-    .contact-section{
-        padding-top: 5%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-self: center;
-        width: 90%;
-        position: relative;
-        top: 150px;
-        z-index: 1;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 0 10px 1px #23223355;
     
-    }
-    
-    .contact-container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 5%;
-    }
-    
-    .icon-container{
-        display: flex;
-        align-self: center;
-        padding: 20px;
-        background-color: #5956E9;
-        border-radius: 100%;
-    }
-    
-    .contact-icon{
-        color: #FFFFFF;    
-    }
-    
-    .contact-section h2{
-        width: 100%;
-        font-weight: 500;
-    }
-    
-    .contact-section hr{
-        background-color: #232233;
-        border: none;
-        width: 100%;
-        height: 4px;
-        margin: 0 20%;
-    }
     
     footer{
         display: flex;
