@@ -13,10 +13,45 @@ body{
                                     /*---------- header ----------*/
 
 /*--- header all---*/
+
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
 nav{
-    padding: 0 1%;
+    background-color: #fff;
+    height: 80%;
+    width: 95%;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+    align-items: center ;
     align-content: center;
 }
+
+a{
+    text-decoration: none;
+
+}
+
+ul, ol{
+    list-style: none;
+}
+
+
 
 .download-button-nav{
     width: 25%;
@@ -29,6 +64,7 @@ nav{
     padding: 0 1%;
     display: flex;
     justify-content: center;
+    margin: 2px;
 }
 
 .download-button-nav h3{
@@ -52,47 +88,10 @@ nav{
     width: 90%;
     height: 100%;
 }
+
 /*--- cellphone and tablets ---*/
 @media screen and (max-width: 768px) and (min-width:0px){
 
-    body{
-        margin: 0;
-    }
-
-    header{
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-
-    nav{
-        background-color: #fff;
-        height: 80%;
-        width: 95%;
-        display: flex;
-        border-radius: 5px;
-        justify-content: space-between ;
-        flex-wrap: wrap;
-        position: relative;
-        padding: 0, 1%;
-        align-items: center ;
-    }
-
-    a{
-        text-decoration: none;
-
-    }
-
-    ul, ol{
-        list-style: none;
-    }
-
-    .contac-header-container{
-        display: none;
-        overflow: hidden;
-    }
 
     .menu-hamburguesa{
         display: none;
@@ -133,64 +132,47 @@ nav{
         width: 15%;
     }
 }
+/*tablets*/
+@media screen and (max-width: 768px) and (min-width: 426px){
+    .contac-header-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+        width: 95%;
+        padding: 2% 0;
+        color: #FFFFFF;
+    }
+
+    .contac-header-container h7{
+        width: 30%;
+    }
+
+    .contac-header-container svg{
+        width: 20%;
+    }
+
+    .hero-section{
+        justify-content: center;
+        gap: 100px 5%;
+        padding: 5%;
+    }
+
+    .frame-info-container{
+        width: 40%;
+
+    }
+
+    .cellphone-hero{
+        width: 40%;
+    }
+}
 
 /*--- computers ---*/
 
 @media screen and (max-width: 1440px) and (min-width: 769px) {
     
-
-    body{
-        margin: 0;
-    }
-
-    header{
-        background-color: blueviolet;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    nav{
-        background-color: #fff;
-        height: 80%;
-        width: 90%;
-        display: flex;
-        border-radius: 5px;
-        justify-content: space-between ;
-        flex-wrap: wrap;
-        position: relative;
-        padding: 0 3%;
-        align-items: center ;
-        margin-bottom: 5%;
-    }
-
-    a{
-        text-decoration: none;
-
-    }
-
-    ul, ol{
-        list-style: none;
-    }
-
-    .contac-header-container{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: #FFFFFF;
-        padding: 1%;
-    }
-
-    .social-icons{
-        display: flex;
-        gap: 50%;
-    }
-
-    .list-icon-nav{
-        display: none;
-    }
 
     .menu-hamburguesa{
         display: none;
@@ -198,20 +180,37 @@ nav{
 }
                                         /* --- main --- */
 
-.hero-section{
-    padding: 5% 0;
+.title-section-container h2{
+    font-weight: 500;
+}
 
+.title-section-container p{
+    color: #6C6C72;
+    font-weight: 400;
+}
+
+/*hero section*/
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0 5% 0;
+    background-color: #5956E9;
+
+}
+.info-app-container{
+    background-color: #FFFFFF;
+    padding: 3%;
 }
 
 .frame-info-container{
-    width: 80%;
     background-color: none;
     border: 10px solid #ffffff30;
-    padding: 7% 0;
+    padding: 3% 0;
 }
 
 .info-app-container{
     position: relative;
+    height: 95%;
     right: 30px;
 }
 
@@ -242,14 +241,6 @@ nav{
     margin-bottom: 10%;
 }
 
-.title-section-container h2{
-    font-weight: 500;
-}
-
-.title-section-container p{
-    color: #6C6C72;
-    font-weight: 400;
-}
     /*--- features section---*/
 
 .features-section{
@@ -362,34 +353,32 @@ nav{
     margin: 0;
 }
 
-.dev-container img{
-
-}
 
 .dev-img-container{
     border: 5px #5956E9 solid;
 }
 
-
+/*cellphone*/
 @media screen and (max-width: 425px) and (min-width:0px){
 
+    .contac-header-container{
+        display: none;
+        overflow: hidden;
+    }
+
     .hero-section{
-        background-color: #5956E9;
+        gap: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
-
     }
 
-    .info-app-container{
-        background-color: #FFFFFF;
-        padding: 3%;
+    .frame-info-container{
+        width: 80%;
     }
 
     .cellphone-hero{
         width: 90%;
-        padding-left: 25%;
     }
 
     /*--- about section ---*/
@@ -462,6 +451,12 @@ nav{
     
     /*--- team section ---*/
 
+
+}
+
+
+/*tablets and pcs*/
+@media screen and (max-width: 1440px) and (min-width:768px){
 
 }
 
