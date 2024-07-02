@@ -447,32 +447,13 @@ nav{
 
                                             /*--- footer ---*/
 
-.contact-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    background-color: red;
-}
-
-.contact-section h2{
-    width: 100%;
-}
-
-.contact-section hr{
-    background-color: #232233;
-    border: none;
-    width: 40%;
-    height: 5px;
-}
 
 footer{
-    display: flex;
-    flex-direction: column;
     background-color: #232233;
     color: #FFFFFF;
-    padding: 10% 5%;
     gap: 20px;
+
+
 }
 
 footer p{
@@ -563,6 +544,61 @@ footer p{
 }
 
 @media screen and (max-width: 425px) and (min-width:0px){
-
+    .contact-section{
+        padding-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        position: relative;
+        top: 150px;
+        z-index: 1;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px #23223355;
+    
+    }
+    
+    .contact-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .icon-container{
+        display: flex;
+        align-self: center;
+        padding: 20px;
+        background-color: #5956E9;
+        border-radius: 100%;
+    }
+    
+    .contact-icon{
+        color: #FFFFFF;    
+    }
+    
+    .contact-section h2{
+        width: 100%;
+        font-weight: 500;
+    }
+    
+    .contact-section hr{
+        background-color: #232233;
+        border: none;
+        width: 100%;
+        height: 4px;
+        margin: 0 20%;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 50% 5% 5% 5%;
+    }
 
 }
