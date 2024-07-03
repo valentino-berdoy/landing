@@ -97,6 +97,10 @@ ul, ol{
         display: none;
     }
 
+    .laptop-ul2{
+        display: none;
+    }
+
     .menu-hamburguesa{
         display: none;
     }
@@ -468,7 +472,10 @@ ul, ol{
 
 
 .dev-img-container{
-    border: 5px #5956E9 solid;
+    border: 10px solid;
+    border-radius: 100%;
+    border-image: url(/img/border-team-img.svg);
+    border-image-slice: 10 fill;
 }
 
 /*--- contact section ---*/
@@ -597,7 +604,7 @@ ul, ol{
     }
 
     .img-adv-container{
-        height: 50%;
+        height: 20%;
     }
 
     /*--- features section ---*/
