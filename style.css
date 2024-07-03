@@ -577,7 +577,7 @@ ul, ol{
 
 
 /*tablets and pcs*/
-@media screen and (max-width: 1440px) and (min-width:768px){
+@media screen and (max-width: 1440px) and (min-width:426px){
 
     .about-section{
         display: flex;
@@ -642,7 +642,7 @@ ul, ol{
         align-self: center;
         width: 90%;
         position: relative;
-        top: 150px;
+        top: 90px;
         z-index: 1;
         background-color: #ffffff;
         border: none;
@@ -771,6 +771,7 @@ footer p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -780,7 +781,6 @@ footer p{
     background-color: #FFFFFF;
     border: none;
 }
-
 
 .copy-footer-container p{
     text-align: center;
@@ -798,6 +798,34 @@ footer p{
         display: flex;
         flex-direction: column;
         padding: 50% 5% 5% 5%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 426px){
+
+    footer{
+        padding: 20% 5% 0 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo-footer-container{
+        width: 30%;
+    }
+
+    .links-footer-container{
+        width: 30%;
+    }
+
+    .letter-footer-container{
+        width: 30%;
+    }
+
+    .copy-footer-container{
+        width: 100%;
     }
 
 }
