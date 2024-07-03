@@ -471,6 +471,13 @@ ul, ol{
     border: 5px #5956E9 solid;
 }
 
+/*--- contact section ---*/
+
+.contact-section ul{
+    padding: 0;
+}
+
+
 /*cellphone*/
 @media screen and (max-width: 425px) and (min-width:0px){
 
@@ -515,7 +522,57 @@ ul, ol{
     
     /*--- team section ---*/
 
+    /*--- contact section ---*/
+    .contact-section{
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        position: relative;
+        top: 150px;
+        z-index: 1;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px #23223355;
+    
+    }
+    
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .icon-container{
+        display: flex;
+        align-self: center;
+        padding: 20px;
+        background-color: #5956E9;
+        border-radius: 100%;
+    }
+    
+    .contact-icon{
+        color: #FFFFFF;    
+    }
+    
+    .contact-section h2{
+        width: 100%;
+        font-weight: 500;
+    }
+    
 
+
+    .contact-section hr{
+        background-color: #232233;
+        border: none;
+        width: 40%;
+        height: 4px;
+    }
 }
 
 
@@ -567,18 +624,20 @@ ul, ol{
         margin: 10px;
     }
     /*--- team section ---*/
-}
 
-
-                                            /*--- footer ---*/
-
-
-
-
-.contact-section{
-        padding-top: 5%;
+    .order-team-container{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .dev-container{
+        width: 20%;
+    }
+
+    /*--- contact section ---*/
+    .contact-section{
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-self: center;
         width: 90%;
@@ -593,7 +652,6 @@ ul, ol{
     }
     
     .contact-container{
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -619,12 +677,24 @@ ul, ol{
     }
     
     .contact-section hr{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         background-color: #232233;
         border: none;
-        width: 100%;
-        height: 4px;
-        margin: 0 20%;
+        width: 3px;
+        height: 140px;
+        margin: 0 50px;
     }
+}
+
+
+                                            /*--- footer ---*/
+
+
+
+
+
                                             
 footer{
     background-color: #232233;
