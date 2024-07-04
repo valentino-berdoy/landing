@@ -43,6 +43,13 @@ ul, ol{
     list-style: none;
 }
 
+.email-number-container{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .download-button-nav{
     width: 20%;
     height: 90%;
@@ -333,7 +340,7 @@ ul, ol{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 10%;
+    margin: 10% 10%;
 }
 
 /*--- about section---*/
