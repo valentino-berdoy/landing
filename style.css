@@ -502,6 +502,8 @@ ul, ol{
 
 
 .dev-img-container{
+    display: flex;
+    align-items: center;
     border: 10px solid;
     border-radius: 100%;
     border-image: url(/img/border-team-img.svg);
@@ -615,6 +617,15 @@ ul, ol{
 
 /*tablets and pcs*/
 @media screen and (max-width: 1440px) and (min-width:426px){
+
+    .title-section-container{
+       text-align: center;
+       padding: 0 15%;
+    }
+
+    .title-section-container2{
+        padding: 0 15%;
+    }
 
     .about-section{
         display: flex;
