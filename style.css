@@ -20,21 +20,18 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 5% 0;
 }
 
 nav{
     background-color: #fff;
     height: 80%;
-    width: 95%;
+    width: 90%;
     display: flex;
     border-radius: 5px;
     justify-content: space-between ;
-    flex-wrap: wrap;
     position: relative;
-    padding: 0;
     align-items: center ;
-    align-content: center;
 }
 
 a{
@@ -57,6 +54,7 @@ ul, ol{
     padding: 0 1%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 2px;
 }
 
@@ -68,11 +66,11 @@ ul, ol{
 .logo-nav-container{
     background-color: #ffffff;
     width: 30%;
-    height: 150%;
-    left: 45%;
+    height: 130%;
+    left: 33%;
     padding: 0 3px;
     max-width: 150px;
-    position: sticky;
+    position: absolute;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -133,12 +131,21 @@ ul, ol{
     .label-hamburguer-nav{
         width: 15%;
     }
+
+    .download-button-nav h3{
+        font-size: smaller;
+    }
 }
 /*tablets*/
 @media screen and (max-width: 768px) and (min-width: 426px){
     header{
         display: flex;
         gap: 10px;
+    }
+
+    .logo-nav-container{
+        height: 140%;
+        left: 40%;
     }
 
 
@@ -180,9 +187,24 @@ ul, ol{
 /*--- computers ---*/
 
 @media screen and (max-width: 1440px) and (min-width: 769px) {
+    .contac-header-container{
+        padding: 1% 0;
+    }
+    
     header{
         display: flex;
         gap: 20px;
+        padding: 1% 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-nav-container{
+        left: 45%;
+        height: 150%;
     }
 
     .menu-hamburguesa{
@@ -198,20 +220,20 @@ ul, ol{
     }
 
     .laptop-ul{
-        width: 30%;
+        width: 35%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        gap: 10px;
+        gap: 10%;
         list-style: none;
         padding: 0;
     }
 
     .laptop-ul2{
-        width: 30%;
+        width: 35%;
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 20%;
         list-style: none;
         padding: 0;
     }
@@ -225,6 +247,10 @@ ul, ol{
 
     }
 
+    .download-button-nav{
+        width: 13%;
+    }
+
     .social-icons{
         display: flex;
         gap: 20px;
@@ -232,9 +258,9 @@ ul, ol{
 
     .hero-section{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        gap: 5%;
+        gap: 100px 0;
     }
 
     .frame-info-container{
@@ -263,7 +289,7 @@ ul, ol{
 .hero-section{
     display: flex;
     flex-wrap: wrap;
-    padding: 3% 0 5% 0;
+    padding: 0 0 5% 0;
     background-image: url(/img/background-image.svg);
 
 }
