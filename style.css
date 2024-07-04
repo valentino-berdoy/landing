@@ -12,11 +12,7 @@ body{
 }
                                     /*---------- header ----------*/
 
-/*--- header all---*/
-
-body{
-    margin: 0;
-}
+/*--- header ---*/
 
 header{
     width: 100%;
@@ -50,10 +46,8 @@ ul, ol{
     list-style: none;
 }
 
-
-
 .download-button-nav{
-    width: 25%;
+    width: 20%;
     height: 90%;
     background-color: #5956E9;
     border: none;
@@ -75,10 +69,10 @@ ul, ol{
     background-color: #ffffff;
     width: 30%;
     height: 150%;
-    left: 30%;
+    left: 45%;
     padding: 0 3px;
     max-width: 150px;
-    position: absolute;
+    position: sticky;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -142,12 +136,18 @@ ul, ol{
 }
 /*tablets*/
 @media screen and (max-width: 768px) and (min-width: 426px){
+    header{
+        display: flex;
+        gap: 10px;
+    }
+
+
     .contac-header-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        text-align: start;
+        text-align: center;
         width: 95%;
         padding: 2% 0;
         color: #FFFFFF;
@@ -180,7 +180,10 @@ ul, ol{
 /*--- computers ---*/
 
 @media screen and (max-width: 1440px) and (min-width: 769px) {
-    
+    header{
+        display: flex;
+        gap: 20px;
+    }
 
     .menu-hamburguesa{
         display: none;
@@ -215,6 +218,7 @@ ul, ol{
 
     .contac-header-container{
         display: flex;
+        align-items: center;
         justify-content: space-between;
         width: 90%;
         color: #FFFFFF;
@@ -260,7 +264,7 @@ ul, ol{
     display: flex;
     flex-wrap: wrap;
     padding: 3% 0 5% 0;
-    background-color: #5956E9;
+    background-image: url(/img/background-image.svg);
 
 }
 .info-app-container{
@@ -361,7 +365,7 @@ ul, ol{
 /*--- features section---*/
 
 .features-section{
-    background-color: #5956E9;
+    background-image: url(/img/background-Image.svg);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -591,7 +595,7 @@ ul, ol{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 10% 0;
+        padding-bottom: 10%;
     }
 
     .about-section img{
