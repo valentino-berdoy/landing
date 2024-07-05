@@ -32,7 +32,7 @@ nav {
     z-index: 5;
     align-items: center;
     box-shadow: 0 0 10px 1px #23223366;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 a{
@@ -609,10 +609,10 @@ ul, ol{
         overflow: hidden;
     }
 
-    .img-feat{
-        width: 100%;
+    .img-feat {
+        width: 90%;
         position: relative;
-        left: 30px;
+        left: 20px;
     }
     
     /*--- team section ---*/
@@ -918,7 +918,7 @@ footer p{
 @media screen and (max-width: 1440px) and (min-width: 426px){
 
     footer{
-        padding: 20% 5% 0 5%;
+        padding: 15% 5% 0 5%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
