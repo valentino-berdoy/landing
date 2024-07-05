@@ -228,10 +228,12 @@ ul, ol{
     nav{
         display: flex;
         justify-content: space-between;
+        position: relative;
+        margin: 0;
     }
 
     .logo-nav-container{
-        left: 45%;
+        left: 42%;
         height: 150%;
     }
 
@@ -248,7 +250,7 @@ ul, ol{
     }
 
     .laptop-ul{
-        width: 35%;
+        width: 40%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -258,10 +260,10 @@ ul, ol{
     }
 
     .laptop-ul2{
-        width: 35%;
+        width: 30%;
         display: flex;
         flex-direction: row;
-        gap: 20%;
+        gap: 15%;
         list-style: none;
         padding: 0;
     }
@@ -319,6 +321,8 @@ ul, ol{
     flex-wrap: wrap;
     padding: 0 0 5% 0;
     background-image: url(/img/background-Image.svg);
+    justify-content: flex-end;
+    gap: 100px 10%;
 
 }
 .info-app-container{
@@ -437,7 +441,8 @@ ul, ol{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    margin-top: 10%;
     color: #FFFFFF;
 }
 
@@ -545,6 +550,7 @@ ul, ol{
     border-image: url(/img/border-team-img.svg);
     border-image-slice: 10 fill;
     height: 40%;
+    margin-top: 10%;
 }
 
 /*--- contact section ---*/
@@ -576,6 +582,8 @@ ul, ol{
 
     .cellphone-hero{
         width: 90%;
+        position: relative;
+        left: 20px;
     }
 
     /*--- about section ---*/
@@ -603,6 +611,8 @@ ul, ol{
 
     .img-feat{
         width: 100%;
+        position: relative;
+        left: 30px;
     }
     
     /*--- team section ---*/
@@ -715,6 +725,8 @@ ul, ol{
 
     .img-feat{
         width: 30%;
+        position: relative;
+        left: 15px;
     }
 
     .feat-container h3, p{
