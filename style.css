@@ -10,10 +10,7 @@ body{
     box-sizing: border-box;
    
 }
-                                    /*---------- header ----------*/
-
-/*--- header ---*/
-
+/*-------------------- header --------------------*/
 header{
     width: 100%;
     display: flex;
@@ -44,12 +41,60 @@ ul, ol{
     list-style: none;
 }
 
+.contac-header-container{
+    display: none;
+    overflow: hidden;
+}
+
 .email-number-container{
     list-style: none;
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding: 0;
+}
+
+.laptop-ul{
+    display: none;
+}
+
+.laptop-ul2{
+    display: none;
+}
+
+.menu-hamburguesa{
+    display: none;
+}
+
+.menu-hamburguesa:checked + .nav-ul{
+    height: 150px;
+    width: 30%;
+
+}
+
+.label-hamburguer-nav{
+    width: 15%;
+}
+
+.nav-ul{
+    background-color: white;        
+    border-radius: 5px;
+    width: 30%;        
+    height: 0;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+
+    transition: all .3s;
+    overflow: hidden;
 }
 
 .download-button-nav{
@@ -60,7 +105,7 @@ ul, ol{
     border-radius: 5px;
     color:#ffffff;
     font-weight: 500;
-    padding: 0 1%;
+    padding: 6px 1%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +115,13 @@ ul, ol{
 .download-button-nav h3{
     font-weight: 500;
     width: 100%;
+    font-size: smaller;
 }
+
+.list-icon-nav{
+    cursor: pointer;
+}
+
 
 .logo-nav-container{
     background-color: #ffffff;
@@ -91,220 +142,15 @@ ul, ol{
     height: 100%;
 }
 
-/*--- cellphone and tablets ---*/
-@media screen and (max-width: 768px) and (min-width:0px){
-
-    .laptop-ul{
-        display: none;
-    }
-
-    .laptop-ul2{
-        display: none;
-    }
-
-    .menu-hamburguesa{
-        display: none;
-    }
-
-    .menu-hamburguesa:checked + .nav-ul{
-        height: 150px;
-        width: 30%;
-
-    }
-
-    .list-icon-nav{
-        cursor: pointer;
-    }
-
-    .nav-ul{
-        background-color: white;        
-        border-radius: 5px;
-        width: 30%;        
-        height: 0;
-        position: absolute;
-        top: 90%;
-        left: 0;
-        height: 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10%;
-        margin: 0;
-        padding: 0;
-        z-index: 1;
-
-        transition: all .3s;
-        overflow: hidden;
-    }
-
-    .label-hamburguer-nav{
-        width: 15%;
-    }
-
-    .download-button-nav{
-        padding: 6px 0;
-    }
-
-    .download-button-nav h3{
-        font-size: smaller;
-    }
-}
-/*tablets*/
-@media screen and (max-width: 768px) and (min-width: 426px){
-    header{
-        display: flex;
-        gap: 10px;
-    }
-
-    .logo-nav-container{
-        height: 140%;
-        left: 40%;
-    }
-
-    .contac-header-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        width: 90%;
-        padding: 3% 0;
-        color: #FFFFFF;
-    }
-
-    .contac-header-container h6{
-        width: 20%;
-        text-align: end;
-        margin: 0;
-    }
-
-
-    .email-number-container{
-        width: 50%;
-    }
-
-    .email-number-container svg{
-        width: 16px;
-    }
-
-    .social-icons{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .hero-section{
-        justify-content: space-evenly;
-        gap: 100px 0;
-        padding: 5%;
-    }
-
-    .frame-info-container{
-        width: 40%;
-
-    }
-
-    .cellphone-hero{
-        width: 40%;
-    }
+.hero-section{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*--- computers ---*/
 
-@media screen and (max-width: 1440px) and (min-width: 769px) {
-    .contac-header-container{
-        padding: 1% 0;
-    }
-
-    .email-number-container{
-        width: 35%;
-    }
-    
-    header{
-        display: flex;
-        gap: 20px;
-        padding: 1% 0;
-    }
-
-    nav{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        margin: 0;
-    }
-
-    .logo-nav-container{
-        left: 42%;
-        height: 150%;
-    }
-
-    .menu-hamburguesa{
-        display: none;
-    }
-    
-    .nav-ul{
-        display: none;
-    }
-
-    .list-icon-nav{
-        display: none;
-    }
-
-    .laptop-ul{
-        width: 40%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 10%;
-        list-style: none;
-        padding: 0;
-    }
-
-    .laptop-ul2{
-        width: 30%;
-        display: flex;
-        flex-direction: row;
-        gap: 15%;
-        list-style: none;
-        padding: 0;
-    }
-
-    .contac-header-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-        color: #FFFFFF;
-
-    }
-
-    .download-button-nav{
-        width: 13%;
-    }
-
-    .social-icons{
-        display: flex;
-        gap: 20px;
-    }
-
-    .hero-section{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 100px 0;
-    }
-
-    .frame-info-container{
-        display: flex;
-        width: 40%;
-        height: 40%;
-    }
-
-    .cellphone-hero{
-        width: 40%;
-        height: 40%;
-    }
-}
-                                        /* --- main --- */
+/*                               --- main --- */
 
 .title-section-container h2{
     font-weight: 500;
@@ -334,6 +180,14 @@ ul, ol{
     background-color: none;
     border: 10px solid #ffffff30;
     padding: 30px 0;
+    margin-top: 20%;
+    width: 80%;
+}
+
+.cellphone-hero{
+    width: 90%;
+    position: relative;
+    left: 20px;
 }
 
 .info-app-container{
@@ -373,6 +227,21 @@ ul, ol{
 }
 
 /*--- about section---*/
+.about-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0;
+}
+
+.order-about-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .adv-about-container{
     width: 80%;
     border-radius: 10px;
@@ -455,6 +324,11 @@ ul, ol{
     font-weight: 350;
 }
 
+.order-feat-container{
+    width: 100%;
+    overflow: hidden;
+}
+
 .feat-container{
     width: 100%;
     display: flex;
@@ -476,6 +350,12 @@ ul, ol{
     font-weight: 350;
 }
 
+.img-feat {
+    width: 90%;
+    position: relative;
+    left: 20px;
+}
+
 /*--- team section ---*/
 .order-team-container{
     display: flex;
@@ -483,7 +363,7 @@ ul, ol{
     justify-content: center;
     gap: 20px;
 }
-/* TO-DO parte de este estilo moverlo al @media de celular*/
+
 .dev-container{
     width: 80%;
     border-radius: 10px;
@@ -556,124 +436,325 @@ ul, ol{
 /*--- contact section ---*/
 
 .contact-section ul{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #23223355;
     padding: 0;
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
 
-/*cellphone*/
-@media screen and (max-width: 425px) and (min-width:0px){
+.icon-container{
+    display: flex;
+    align-self: center;
+    padding: 20px;
+    background-color: #5956E9;
+    border-radius: 100%;
+}
 
-    .contac-header-container{
-        display: none;
-        overflow: hidden;
-    }
+.contact-icon{
+    color: #FFFFFF;    
+}
 
-    .hero-section{
-        gap: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.contact-section h2{
+    width: 100%;
+    font-weight: 500;
+}
 
-    .frame-info-container{
-        margin-top: 20%;
-        width: 80%;
-    }
-
-    .cellphone-hero{
-        width: 90%;
-        position: relative;
-        left: 20px;
-    }
-
-    /*--- about section ---*/
-    .about-section{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 10% 0;
-    }
-
-    .order-about-container{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*--- features section---*/
-
-    .order-feat-container{
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .img-feat {
-        width: 90%;
-        position: relative;
-        left: 20px;
-    }
-    
-    /*--- team section ---*/
-
-    /*--- contact section ---*/
-    .contact-section{
-        padding-top: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-        width: 90%;
-        position: relative;
-        top: 150px;
-        z-index: 1;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 0 10px 1px #23223355;
-    
-    }
-    
-    .contact-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 5%;
-    }
-    
-    .icon-container{
-        display: flex;
-        align-self: center;
-        padding: 20px;
-        background-color: #5956E9;
-        border-radius: 100%;
-    }
-    
-    .contact-icon{
-        color: #FFFFFF;    
-    }
-    
-    .contact-section h2{
-        width: 100%;
-        font-weight: 500;
-    }
-    
-
-
-    .contact-section hr{
-        background-color: #232233;
-        border: none;
-        width: 40%;
-        height: 4px;
-    }
+.contact-section hr{
+    background-color: #232233;
+    border: none;
+    width: 40%;
+    height: 4px;
 }
 
 
-/*tablets and pcs*/
-@media screen and (max-width: 1440px) and (min-width:426px){
 
+
+
+/*                  --- footer ---*/
+                          
+footer{
+    background-color: #232233;
+    color: #FFFFFF;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 50% 5% 5% 5%;
+}
+
+footer p{
+    font-weight: 350;
+}
+
+.logo-footer-container ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 5%;
+}
+
+.logo-footer-container li{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.logo-footer-container hr{
+    margin: 0;
+    width: 2px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.links-footer-container{
+    list-style: none;
+    padding: 0;
+
+}
+
+.letter-search-container{
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 1px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.letter-search-container input{
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5%;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.letter-search-container button{
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    background-color: #5956E9;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.copy-footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.copy-footer-container hr{
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.copy-footer-container p{
+    text-align: center;
+    font-weight: 200;
+}
+
+.copy-footer-container svg{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/*tablets*/
+@media screen and (min-width: 768px){
+
+    .logo-nav-container{
+        height: 140%;
+        left: 38%;
+    }
+
+    .contac-header-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding: 3% 0;
+        color: #FFFFFF;
+    }
+
+    .contac-header-container h6{
+        width: 20%;
+        text-align: end;
+        margin: 0;
+    }
+
+
+    .email-number-container{
+        width: 50%;
+    }
+
+    .email-number-container svg{
+        width: 16px;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*---computer---*/
+@media screen and (min-width: 769px){
+/*------------------header-----------------*/
+
+.contac-header-container{
+    padding: 1% 0;
+}
+
+.email-number-container{
+    width: 35%;
+}
+
+header{
+    display: flex;
+    gap: 20px;
+    padding: 1% 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+}
+
+.logo-nav-container{
+    left: 40%;
+    height: 150%;
+}
+
+.label-hamburguer-nav{
+    display: none;
+}
+
+.menu-hamburguesa{
+    display: none;
+}
+
+.nav-ul{
+    display: none;
+}
+
+.list-icon-nav{
+    display: none;
+}
+
+.laptop-ul{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10%;
+    list-style: none;
+    padding: 0;
+}
+
+.laptop-ul2{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    list-style: none;
+    padding: 0;
+}
+
+.contac-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    color: #FFFFFF;
+
+}
+
+.download-button-nav{
+    width: 13%;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px 0;
+}
+
+.frame-info-container{
+    display: flex;
+    width: 40%;
+    height: 40%;
+}
+
+.cellphone-hero{
+    position: relative;
+    left: 11%;
+    height: 40%;
+}
+}
+
+/*tablets and pcs*/
+@media screen and (min-width:426px){
+
+    .hero-section{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 100px 0;
+        padding: 0% 5% 5% 5%;
+    }
+
+    .frame-info-container{
+        width: 40%;
+        margin: 0;
+    }
+
+    .cellphone-hero{
+        width: 41%;
+    }
+
+/*------------------main-----------------*/
     .title-section-container{
        text-align: center;
        padding: 0 15%;
@@ -799,124 +880,9 @@ ul, ol{
         height: 140px;
         margin: 0 50px;
     }
-}
 
-
-                                            /*--- footer ---*/
-
-
-
-
-
-                                            
-footer{
-    background-color: #232233;
-    color: #FFFFFF;
-    gap: 20px;
-
-
-}
-
-footer p{
-    font-weight: 350;
-}
-
-.logo-footer-container ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    gap: 5%;
-}
-
-.logo-footer-container li{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-}
-
-.logo-footer-container hr{
-    margin: 0;
-    width: 2px;
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: #FFFFFF;
-}
-
-.links-footer-container{
-    list-style: none;
-    padding: 0;
-
-}
-
-.letter-search-container{
-    background-color: #FFFFFF;
-    display: flex;
-    padding: 1px;
-    border-radius: 5px;
-    height: 40px;
-    margin-top: 40px;
-}
-
-.letter-search-container input{
-    width: 80%;
-    border: none;
-    border-radius: 5px;
-    padding-left: 5%;
-    font-family: "Josefin Sans", sans-serif;
-}
-
-.letter-search-container button{
-    width: 20%;
-    border: none;
-    border-radius: 5px;
-    background-color: #5956E9;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.copy-footer-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.copy-footer-container hr{
-    width: 100%;
-    height: 1px;
-    background-color: #FFFFFF;
-    border: none;
-}
-
-.copy-footer-container p{
-    text-align: center;
-    font-weight: 200;
-}
-
-.copy-footer-container svg{
-    padding: 10px;
-}
-
-@media screen and (max-width: 425px) and (min-width:0px){
+    /*---footer---*/
     
-    
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding: 50% 5% 5% 5%;
-    }
-
-}
-
-@media screen and (max-width: 1440px) and (min-width: 426px){
-
     footer{
         padding: 15% 5% 0 5%;
         display: flex;
@@ -940,5 +906,4 @@ footer p{
     .copy-footer-container{
         width: 100%;
     }
-
 }
